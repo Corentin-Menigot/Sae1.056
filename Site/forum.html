@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vous connaître</title>
+        <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="forum.css">
+    </head>
+<body>
+
+
+<h2>Formulaire de Contact </h2>
+<!--PHP ne marche pas j'ai aussi essayé avec la méthode POST-->
+<form  action="traitement.php" method="get" class="forum">
+    <!--Il y a un conteneur forum qui englode un div global et puis dans chaque div il y a 
+     un autre div correpondant aux differente parties-->
+      
+    <div class="conteneur">
+        
+   <!--Premiere partie -->
+    <div class="nom">   
+    <section>
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="name" name="name1" required minlength="4" maxlength="15" 
+        placeholder="Votre Nom" >    
+        <!--Pour changer la taille metre size="10"--> 
+    </section>
+
+
+<section>
+    <label for="nom">Prénom :</label><br>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="15" 
+    placeholder="Votre Prenom"     />  
+</section>
+<section>
+  <label for="lname">Age</label><br>
+   <!-- on peut min et max mais affichage bizare-->
+  <input type="number" id="lname" name="lname" 
+  placeholder="Votre age"   >
+</section>
+</div>
+
+
+<div class="sexe">
+    <section>
+        <label for="email">E-mail :</label><br>
+        <input id="email" type="email" name="email" placeholder="votre adresse mail"  minlength="2" maxlength="30" required>
+    </section>
+    <section>
+        <label for="Telephone">Téléphone :</label><br>
+        <input type="tel" id="Telephone" name="name"  minlength="8" maxlength="15" 
+        placeholder="+33________" >    
+        <!--Pour changer la taille metre size="10"--> 
+    </section>
+    
+    <!---------------------------------------------Pour le sexe---------------------------------------------------------------->
+    <section>
+      <fieldset>
+        <legend>Quel est votre sexe</legend> <!-- Titre du fieldset -->
+
+          <label for="homme">
+            <input id="homme" type="radio" name="sexe" value="Homme" >
+            Homme
+          </label>
+
+          <label for="femme">
+            <input id="femme" type="radio" name="sexe" value="Femme" >
+           Femme
+          </label>
+      </fieldset>
+    </section>
+</div>
+
+<div class="tele">
+    <section>
+        <fieldset>
+            <!-------------------------------------------Pour le premier fieldset Office 365--------------------------------------------------------------- -->
+
+            <legend>Choisir les application que vous avez deja utilisé </legend> <!-- Titre du fieldset -->
+            <div>
+              <label for="Office 365">
+                <input id="Office 365" type="checkbox" name="Office 365" value="Office 365" onclick="ouvrePage('InfoSupSurApli')">
+                Office 365
+              </label>
+                                      <!-------Pour le fieldset assocée qui est cacher de base------>
+<div class="InfoSupSurApliConteneur" id="InfoSupSurApli">
+<fieldset id="InfoSupSurApli" class="InfoSupSurApli">
+    <legend>Quels est/sont la ou les application que vous maitrisé le plus?</legend> <!-- Titre du fieldset -->
+
+      <label for="word">
+        <input id="word" type="checkbox" name="word" value="word" >
+        Word
+      </label>
+
+      <label for="exel">
+        <input id="exel" type="checkbox" name="exel" value="exel" >
+        Exel
+      </label>
+
+      <label for="powerpoint">
+        <input id="powerpoint" type="checkbox" name="powerpoint" value="powerpoint" >
+        Powerpoint
+      </label>
+
+      <label for="Teams">
+        <input id="Teams" type="checkbox" name="Teams" value="Teams" >
+        Teams
+      </label>
+  </fieldset>
+  <p>
+    <input type="button" value="Envoyez" onclick="ouvrePage('InfoSupSurApliConteneur')">
+  </p>
+</div>
+</div>
+<!-------------------------------------------Pour le deuwieme fieldset WEB--------------------------------------------------------------- -->
+          <div>
+                <label for="Web">
+                <input id="Web" type="checkbox" name="Web" value="Web" onclick="ouvrePage('InfoSupSurApli1')" >
+                Web
+              </label>
+                <!-------Pour le fieldset assocée qui est cacher de base------>
+<div class="InfoSupSurApliConteneur" id="InfoSupSurApli1">
+    <fieldset id="InfoSupSurApli1" class="InfoSupSurApli1">
+        <legend>Quels est/sont la ou les application que vous maitrisez le plus?</legend> <!-- Titre du fieldset -->
+    
+          <label for="HTML">
+            <input id="HTML" type="checkbox" name="HTML" value="HTML" >
+            HTML
+          </label>
+    
+          <label for="css">
+            <input id="css" type="checkbox" name="css" value="css" >
+            CSS
+          </label>
+    
+          <label for="Java Script">
+            <input id="Java Script" type="checkbox" name="Java Script" value="Java Script" >
+            Java Script
+          </label>
+    
+          <label for="PHP">
+            <input id="PHP" type="checkbox" name="PHP" value="PHP" >
+            PHP
+          </label>
+      </fieldset>
+      <p>
+        <input type="button" value="Envoyez" onclick="ouvrePage('InfoSupSurApliConteneur')">
+      </p>
+    </div>
+</div> 
+ <!-------------------------------------------Pour le troisieme fieldset Algo--------------------------------------------------------------- -->
+   
+             <div>
+
+              <label for="Algo">
+                <input id="Algo" type="checkbox" name="fruit" value="Algo" onclick="ouvrePage('InfoSupSurApli2')" >
+                Algo
+              </label>
+   <!-------Pour le fieldset assocée qui est cacher de base------>
+              <div class="InfoSupSurApliConteneur" id="InfoSupSurApli2">
+                <fieldset id="InfoSupSurApli2" class="InfoSupSurApli2">
+                    <legend>Quels est/sont la ou les application que vous maitrisez le plus?</legend> <!-- Titre du fieldset -->
+                
+                      <label for="HTML">
+                        <input id="HTML" type="checkbox" name="HTML" value="HTML" >
+                        HTML
+                      </label>
+                
+                      <label for="css">
+                        <input id="css" type="checkbox" name="css" value="css" >
+                        CSS
+                      </label>
+                
+                      <label for="Java Script">
+                        <input id="Java Script" type="checkbox" name="Java Script" value="Java Script" >
+                        Java Script
+                      </label>
+                
+                      <label for="PHP">
+                        <input id="PHP" type="checkbox" name="PHP" value="PHP" >
+                        PHP
+                      </label>
+                  </fieldset>
+                  <p>
+                    <input type="button" value="Envoyez" onclick="ouvrePage('InfoSupSurApliConteneur')">
+                  </p>
+                </div>
+            </div>
+
+
+<!-------------------------------------------Pour le quatrieme fieldset Algo--------------------------------------------------------------- -->
+<div>
+              <label for="ApplicationSup">
+                <input id="ApplicationSup" type="checkbox" name="ApplicationSup" value="ApplicationSup" onclick="ouvrePage('InfoSupSurApli3')" >
+                ApplicationSup
+              </label> 
+           
+                 <!-------Pour le fieldset assocée qui est cacher de base------>
+              
+              <div class="InfoSupSurApliConteneur" id="InfoSupSurApli3">
+                <fieldset id="InfoSupSurApli3" class="InfoSupSurApli3">
+                    <legend>Quels est/sont la ou les application que vous maitrisez le plus?</legend> <!-- Titre du fieldset -->
+                
+                    <div>
+                        <label for="Application">Application 1 :</label><br>
+                        <input type="text" id="Application" name="Application"   maxlength="30" 
+                        placeholder="Application" >        
+                      </div>
+                      
+                      <fieldset>
+                        <legend>Quel est votre niveau de maitrise</legend> <!-- Titre du fieldset -->
+                          <label for="Bien">
+                            <input id="Bien" type="radio" name="ap1" value="Bien" >
+                            Bien
+                          </label>
+                          <label for="Moyen">
+                            <input id="Moyen" type="radio" name="ap1" value="Moyen" >
+                            Moyen
+                          </label>
+                          <label for="Apprentyissage">
+                            <input id="Apprentyissage" type="radio" name="ap1" value="Apprentyissage" >
+                            Apprentyissage
+                          </label>
+                      </fieldset>
+
+                      <div>
+                        <label for="Application">Application 2 :</label><br>
+                        <input type="text" id="Application" name="Application"   maxlength="30" 
+                        placeholder="Application" >        
+                      </div>
+                      <fieldset>
+                        <legend>Quel est votre niveau de maitrise</legend> <!-- Titre du fieldset -->
+                          <label for="Bien">
+                            <input id="Bien" type="radio" name="ap2" value="Bien" >
+                            Bien
+                          </label>
+                          <label for="Moyen">
+                            <input id="Moyen" type="radio" name="ap2" value="Moyen" >
+                            Moyen
+                          </label>
+                          <label for="Apprentyissage">
+                            <input id="Apprentyissage" type="radio" name="ap2" value="Apprentyissage" >
+                            Apprentyissage
+                          </label>
+                      </fieldset>
+                </fieldset>
+                      
+                
+               <div>
+                  <p>
+                    <input type="button" value="Envoyez" onclick="ouvrePage('InfoSupSurApliConteneur')">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+    </section>
+</div>
+
+<div class="mail">
+    <section>
+        <div>
+            <label for="sujet">Le sujet  :</label><br>
+            <textarea id="sujet" type="textarea" cols="45" name="sujet" placeholder="Sujet du mail :" ></textarea>
+            <!--cols c'sst le nb de colone pour changer la taille du texte area-->
+          </div>
+    </section>
+    <section>
+        <div>
+            <label for="contenue">Le contenu :</label><br>
+            <textarea id="contenue" type="textarea" cols="45" name="contenue" placeholder="Le contenue :" ></textarea>
+          </div>
+    </section>
+    <section>
+      <div>
+        <label for="">Votre lettre de motivation</label>
+        <input type="file">
+      </div>
+    </section>
+</div>
+    </div>
+
+
+<p>
+    <input type="submit" value="Envoyer">
+  </p>
+<p>
+    <input type="reset" value="Reset">
+</p>
+    
+    
+
+</form> 
+
+
+
+<script src="forum.js"></script>
+</body>
+</html>

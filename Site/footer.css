@@ -1,0 +1,41 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #11073d;
+    margin-top: 10px;
+}
+
+footer section{
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+footer section:first-of-type{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+iframe {
+    width: 200px;
+    height: 200px;       /* à définir et à ajuster */
+    margin: none;
+  }
+  

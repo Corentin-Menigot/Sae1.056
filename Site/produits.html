@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Les produits</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="produits.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+	</head>
+
+    <body>
+        <header>
+            <nav>
+                <img src="./img/LogoAtos.png" alt="Logo">
+                <ul>
+                    <li><a href="./projets.html">Projets</a></li>
+                    <li><a href="./PageOrganisation.html">Organisation</a></li>
+                    <li><a href="./ecologie.html">Ecologie</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./produits.html" class = "active">Produits</a></li>
+                    <li><a href="./PageClients.html">Clients</a></li>
+                    <li><a href="./forum.html"target="_blank">Nous rejoindre</a></li>
+                  </ul> 
+                <div class="icone-nemu">&#9776;</div> 
+        <div class="interrupteur">
+        <!--Pour le mode sombre-->
+          <input type="checkbox" id="modeinterrupteur" onchange="modeSombre()">
+          <!--Le for="" indique que le label est pour l'input car il a le meme idenifiant -->
+          <!--Cela nous permet cliquer sur le label et avec le for qui l'associe au input nous permet 
+             d'acrtiver la fonction toggleDarkMode et change le mode sombre -->
+          <label class="interrupteur-poignee" for="modeinterrupteur" onclick="myFunction" ></label>
+        </div>
+              </nav>
+              
+        </header>
+
+        <main>
+
+          <!-----------------------------------------------Pour les drop down menu -------------------------------------------------------------------------------->
+<div  class="produit">
+    <div class="dropdown">
+        <button  class="dropbtn">Les produits d'Atos</button>
+
+        <div class="dropdown-content">
+          <a href="#1.1">Services d’application</a>
+          <a href="#1.2">Services d’assurance digitale</a>
+          <a href="#1.3">LOW-CODE</a>
+          <a href="#1.4">SAP Services Mondiaux</a>
+          <a href="#1.5">Global Microsoft Service</a>
+          <a href="#1.6">Gestion de Contenu d'Entreprise</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Analytique, Ia et automatisation </button>
+        <div class="dropdown-content">
+          <a href="#2.1">Automatisation</a>
+          <a href="#2.2">Intelligence connectée </a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Cybersécurité</button>
+        <div class="dropdown-content">
+          <a href="#3.1">Détection et réponse </a>
+          <a href="#3.2">Protection et gouvernance des données</a>
+          <a href="#3.3">Sécurité de l’espace de travail numérique</a>
+          <a href="#3.4">Sécurité du cloud</a>
+          <a href="#3.5">Sécurité pour l’Internet des Objets</a>
+
+          
+
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Conseil en transformation digitale </button>
+        <div class="dropdown-content">
+          <a href="#4.1">Conseil en transformation digitale </a>
+         
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Informatique avancée</button>
+        <div class="dropdown-content">
+          <a href="#5.1">Supercalculateur</a>
+          <a href="#5.2">Ordinateurs quantiques </a>
+          <a href="#5.3"> IA</a>
+        </div>
+      </div>
+    </div>
+<!----------------------------------------------- FIN Pour les drop down menu -------------------------------------------------------------------------------->
+
+<!-----------------------------------------------Pour les produit -------------------------------------------------------------------------------->
+
+    <h1>Les produits d'Atos</h1>
+    <section>
+        <h2>1. Applications et plateformes modernes</h2>
+        <h3 id="1.1">1.1 Services d’application</h3>
+        <article class = "left" >
+        <p>L'environnement actuel, caractérisé par des changements rapides sur le plan réglementaire, politique et numérique, 
+            pousse les organisations à repenser leur façon de fonctionner. Elles doivent se concentrer sur la vitesse, l'adaptabilité, 
+            l'innovation, la qualité et la sécurité tout en veillant à ce que leur infrastructure d'applications commerciales soit souple, agile et optimisée. 
+            Les services d'applications d'Atos permettent aux clients de se recentrer sur leur cœur de métier en prenant en charge l'intégralité 
+            de leur infrastructure d'application. Atos met en avant son expertise technique, 
+            sa culture du zéro défaut, ses solutions sécurisées et son efficacité énergétique optimisée pour fournir des services d'application solides 
+            et flexibles. </p>
+        <aside><img src="./img/servicesDapplication.jpg" alt="Services D'application" class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>              
+        <h3 id="1.2">1.2 Services d’assurance digitale</h3>
+        <article class = "right">
+        <p>Atos offre une gamme complète de services de tests d'entreprise et d'assurance numérique, y compris des conseils, de l'ingénierie de qualité, 
+            et des solutions adaptées à différents secteurs exploitant les dernières technologies. 
+            Cette transition va de l'assurance qualité à l'ingénierie de qualité, visant à assurer une couverture de test complète, 
+            des délais d'exécution plus courts, une meilleure qualité et sécurité, tout en réduisant les coûts de test, sans compromettre la qualité. 
+            <aside><img src="./img/AssuranceDigitale.jpg" alt="test" class = "product"></aside> <!--Image-->
+        </article>
+    </section>
+    <hr class="rounded">
+    <section>              
+        <h3 id="1.3">1.3 LOW-CODE </h3>
+        <article class = "left">
+        <p>Le portefeuille Low-code/No-code d'Atos se distingue par son approche unique axée sur la durabilité, 
+            l'innovation et des capacités d'exécution de premier ordre. Cette approche aide les clients à accélérer leur transformation numérique en apportant 
+            plus de flexibilité et d'agilité à leurs opérations commerciales. 
+            <aside><img src="./img/LowCode.jpg" alt="test"class = "product"></aside> <!--Image-->
+        </article>
+    </section>
+    <hr class="rounded">
+    <section>              
+        <h3 id="1.4">1.4 SAP Services Mondiaux </h3>
+        <article class = "right">
+        <p>D'après une étude récente, les entreprises qui utilisent SAP S/4HANA et adoptent une approche orientée donnée enregistrent en moyenne une augmentation
+             de 3,1 % de leur chiffre d'affaires et une amélioration de la productivité de leurs employés de 14 %. 
+             La majorité de ces entreprises choisissent également d'héberger leurs systèmes S/4HANA dans le Cloud pour plus de flexibilité. 
+        </p>
+        <p>
+            Atos accompagne les entreprises tout au long de ce processus de numérisation, en offrant des solutions métier et une transformation accélérée de SAP S/4HANA. 
+            Ils privilégient un modèle "Cloud-First" et proposent des services SAP intégrés pour transformer intégralement les activités, les services et 
+            l'infrastructure Cloud. 
+        </p>
+        <p>
+            Avec une équipe de près de 13 500 experts SAP répartis dans plus de 40 pays, Atos met en avant sa solide connaissance de l'industrie, ses méthodologies mondiales, 
+            ses compétences techniques et son vaste réseau de partenaires pour garantir que l'adoption de SAP S/4HANA dans votre entreprise crée une valeur commerciale rapide,
+             authentique et différenciatrice. 
+        </p>
+        <p>
+            SAP S/4HANA est une suite logicielle de gestion d'entreprise de nouvelle génération développée par SAP. 
+            Cette solution est conçue pour offrir des fonctionnalités avancées de gestion des entreprises, 
+            en intégrant les dernières avancées technologiques pour aider les entreprises à gérer leurs opérations de manière plus efficace, 
+            à prendre des décisions plus éclairées et à s'adapter aux exigences changeantes de l'environnement commercial. 
+        </p>
+        <aside><img src="./img/SAP.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="1.5">1.5 Global Microsoft Service </h3>
+        <article class = "left">
+        <p>Atos, partenaire de Microsoft depuis plus de 20 ans, est un intégrateur de systèmes mondial qui offre des solutions cloud personnalisées 
+            et sécurisées. Leurs services couvrent un large éventail de domaines, notamment Microsoft Azure, la sécurité, 
+            le lieu de travail moderne, Microsoft 365, et bien d'autres. Atos collabore avec Microsoft pour proposer des solutions sectorielles 
+            dans divers domaines, et s'engage à aider les organisations à réduire leur empreinte carbone informatique en fournissant des solutions 
+            de cloud computing durables pour atteindre les objectifs NetZéro. </p>
+            <aside><img src="./img/Microsoft.jpg" alt="test"class = "product"></aside> <!--Image-->
+        </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="1.6">1.6 Gestion de Contenu d'Entreprise </h3>
+        <article class = "right">
+        <p>L'offre de Gestion de Contenu d'Entreprise (ECM) soutient la transformation numérique des entreprises en proposant des solutions innovantes 
+            pour la capture, le traitement, et la diffusion de contenu via des flux de travail, afin de fournir une expérience personnalisée sur différents 
+            canaux. </p>
+            <aside><img src="./img/ECM.jpg" alt="test"class = "product"></aside> <!--Image-->
+        </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h2>2. Analytique, Ia et automatisation </h2>
+        <h3 id="2.1">2.1 Automatisation </h3>
+        <article class = "left">
+        <p>En collaborant étroitement pour élaborer votre stratégie d'automatisation et de robotisation, vous pourriez réaliser des économies considérables 
+            tout en vous démarquant grâce à des informations en temps réel. 
+        </p>
+        <p>    
+            Grâce à l'intégration des capacités de l'intelligence artificielle dans les technologies d'automatisation basées sur le cloud avec Atos OneCloud, 
+            Atos pousse l'automatisation à un niveau tel qu'elle ne se contente pas d'améliorer les processus existants, 
+            mais elle peut les remplacer entièrement. 
+        </p>
+        <aside><img src="./img/Automatisation.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="2.2">2.2 Intelligence connectée  </h3>
+        <article class = "right">
+        <p>Le futur appartient à ceux qui savent exploiter les opportunités offertes par leurs données. La capacité à collecter, intégrer, gérer et transformer
+             rapidement les données en résultats commerciaux est cruciale pour la croissance et la compétitivité d'une entreprise. 
+            Atos Codex se spécialise dans l'analyse de données pour la transformation des activités, s'adaptant à tous les secteurs. 
+            Forts de notre expertise et de notre connaissance des domaines, nous proposons une gamme complète de solutions et de fonctionnalités pour concevoir,
+             exécuter et sécuriser vos plateformes de données au service de vos activités. 
+            Découvrez dès aujourd'hui la valeur de vos données. 
+        </p>
+        <aside><img src="./img/IntelligenceConnectee.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h2>3. Cybersécurité </h2>
+        <h3 id="3.1">3.1 Détection et réponse </h3>
+        <article class = "left">
+        <p>Les cyber-attaques deviennent de plus en plus sophistiquées et agressives chaque jour. 
+            En tant que prestataire de services de cybersécurité, Atos offre une protection constante dans un environnement où les menaces évoluent rapidement. 
+        </p>
+        <ul>
+            <li>Détection et chasse des menaces.</li>
+            <li>Confinement automatique et réponse complète.</li>
+        </ul>
+        <aside><img src="./img/DetectionReponse.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="3.2">3.2 Protection et gouvernance des données</h3>
+        <article class = "right">
+        <ul>
+            <li>Protéger la confidentialité des données.</li>
+            <li>Conformité aux normes réglementaires.</li>
+            <li>Détecter les vulnérabilités, analyser les risques.</li>
+        </ul>
+        <aside><img src="./img/ProtectionDonnees.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="3.3">3.3 Sécurité de l’espace de travail numérique </h3>
+        <article class = "left">
+        <ul>
+            <li>Services de gouvernance des données.</li>
+            <li>Cloud Security Access Broker (CASB) : contrôlez et appliquez les politiques de confidentialité et de conformité des données dans les applications approuvées dans le cloud. </li>
+            <li>Chiffrement de données.</li>
+            <li>Identités numériques de confiance : fournissez une identité personnelle à vos utilisateurs. </li>
+            <li>Gouvernance et administration des identités : gérez les identités numériques des utilisateurs. </li>
+            <li>Gestion de l’accès Web : authentification multi-facteurs. </li>
+            <li>Signature électronique. </li>
+            <li>Horodatage : date et heure associées à un document. </li>
+            <li>Sensibilisation à la sécurité. </li>
+        </ul>
+        <aside><img src="./img/SecuriteNumerique.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="3.4">3.4 Sécurité du cloud  </h3>
+        <article class = "right">
+        <ul>
+            <li>Evaluation des risques.</li>
+            <li>Sécurité & contrôle des données.</li>
+            <li>Chiffrement Cloud.</li>
+        </ul>
+        <aside><img src="./img/SecuriteCloud.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="3.5">3.5 Sécurité pour l’Internet des Objets</h3>
+        <article class = "left">
+        <ul>
+            <li>Sécurité embarquée : assurer la protection des appareils et des capteurs intégrés sans compromettre leur fonctionnement optimal.</li>
+            <li>Communications sécurisées : une solution souple et conforme qui assure la sécurité des objets connectés, de leurs communications et de l'échange de données entre eux.</li>
+            <li>Gestion du cycle de vie des identités des appareils : gérer la création et le cycle de vie des certificats numériques utilisés dans l'Internet des objets.</li>
+        </ul>
+        <aside><img src="./img/SecuriteInternetObjets.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h2 id="4.1">4. Conseil en transformation digitale </h2>
+        <article class = "right">
+        <p>Fournir à nos clients des informations pertinentes et de les guider à chaque étape, depuis la phase de réflexion métier jusqu'à la concrétisation de leurs projets de transformation.
+        </p>
+        <ul>
+            <li>Stratégie digitale : organisation et gestion des données.</li>
+            <li>Architecture d’Entreprise : adoption de nouvelle technologies et amélioration de l’efficacité d’utilisation de ces technologies.</li>
+            <li>Gestion des risques : conformité et éthique, conformité RGPD (réglementation européenne en matière de protection des données).</li>
+        </ul>
+        <aside><img src="./img/ConseilTransofrmationDigitale.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h2>Informatique avancée</h2>
+        <h3 id="5.1">5.1 Supercalculateur</h3>
+        <article class = "left">
+        <p>Un supercalculateur est un type d'ordinateur extrêmement puissant conçu pour effectuer des calculs complexes à grande échelle à des vitesses exceptionnelles.
+            Différents modèles disponibles: 
+        </p>
+        <ul>
+            <li>BullSequana XH3000 </li>
+            <li>BullSequana X800 series </li>
+            <li>BullSequana X400 series </li>
+            <li>BullSequana BXI V2 </li>
+            <li>Atos HPC Software Suites </li>
+        </ul>
+        <aside><img src="./img/Supercalculateur.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        <h3 id="5.2">5.2 Ordinateurs quantiques </h3>
+        <article class = "right">
+        <ul>
+            <li>Permettre la formation et l'exploration : Donner à nos clients l'opportunité de se former et d'explorer les nouvelles opportunités offertes par l'informatique quantique, 
+                afin qu'ils puissent comprendre et exploiter cette technologie émergente.</li>
+            <li>Développer des applications et des algorithmes quantiques : 
+                Travailler sur la création d'applications et d'algorithmes adaptés à l'informatique quantique, afin de tirer parti de ses capacités uniques. </li>
+            <li>Ne pas attendre les accélérateurs quantiques commerciaux : 
+                Avancer dans  le domaine de l'informatique quantique sans dépendre de l'arrivée et de la commercialisation des premiers accélérateurs quantiques, 
+                en développant des compétences et des ressources pour être prêt lorsque cette technologie deviendra largement accessible. </li>
+        </ul>
+        <p>L'Atos Quantum Learning Machine (QLM) est une appliance complète qui présente les caractéristiques suivantes : 
+        </p>
+        <ul>
+            <li>Environnement de programmation universel : Il offre un environnement de programmation polyvalent permettant aux clients de ne pas être dépendants d'un fournisseur 
+                ou d'une technologie spécifique en matière d'informatique quantique. </li>
+            <li>Simulation de jusqu'à 41 qubits : La QLM permet de simuler jusqu'à 41 qubits, dans les paramètres de dimensions typiques d'un serveur d'entreprise. 
+                Cette capacité de simulation avancée permet aux utilisateurs de tester et d'expérimenter avec des algorithmes quantiques sans nécessiter un matériel quantique réel. </li>
+            <li>Langage de programmation quantique universel : La QLM repose sur un langage de programmation quantique universel appelé AQASM (Atos Quantum Assembly Language). 
+                Il s'agit d'un langage hybride basé sur Python, qui permet de développer des applications et des algorithmes quantiques de manière efficace et flexible. </li>
+        </ul>
+        <aside><img src="./img/OrdinateurQuantique.jpg" alt="test"class = "product"></aside> <!--Image-->
+    </article>
+    </section>
+    <hr class="rounded">
+    <section>
+        
+        <h3 id="5.3">5.3 IA</h3>
+        <article class = "left">
+        <p>La création, la formation et l'optimisation de modèles de qualité de production sont coûteuses, nécessitant de nombreuses itérations, de grands ensembles de données, 
+            une expertise sectorielle et de nombreuses heures de calcul, dans un contexte de pénurie de data scientists. C'est pourquoi Atos a développé un portefeuille 
+            logiciel complet en intelligence artificielle (IA) avec plus de 150 modèles d'IA préconstruits. 
+            Ces modèles pré-entrainés ont été formés sur des ensembles de données représentatifs et atteignent une précision de plus de 99 %. Ces modèles peuvent être facilement 
+            ré-entrainés avec vos propres données ou entièrement personnalisés pour des besoins spécifiques. Atos vous aide à déployer l'IA et l'apprentissage automatique (ML)
+             plus rapidement et à moindre coût sur votre infrastructure existante ou sur la gamme de serveurs Atos. 
+        </p>
+        <aside><img src="./img/IA.jpg" alt="test"class = "product"></aside> 
+        
+        <!--Image-->
+    </article>
+    </section>
+    <br>
+        </main>
+
+<!-----------------------------------------------FIN Pour les produit -------------------------------------------------------------------------------->
+        <footer>
+            <section>
+                <article><a href="https://www.youtube.com/user/Atos" target="_blank" title="Lien vers la chaine youtube d'Atos">
+                  <img alt="Image_youtube" src="./img/youtube.png" />
+                </a></article>
+                <article><a href="https://www.instagram.com/atosinside/" target="_blank" title="Lien vers le compte instagram d'Atos">
+                  <img alt="Image_instagram" src="./img/instagram.png"/>
+                </a></article>
+                <article><a href="https://www.facebook.com/Atos" target="_blank" title="Lien vers le compte facebook d'Atos">
+                  <img alt="Image_facebook" src="./img/facebook.png"/>
+                </a></article>
+                <article><a href="https://twitter.com/atos" target="_blank" title="Lien vers le compte twitter d'Atos">
+                  <img alt="Image_twitter" src="./img/logo-twitter.png"/>
+                </a></article>
+                <article><a href="https://www.linkedin.com/company/atos/" target="_blank" title="Lien vers le compte linkedin d'Atos">
+                  <img alt="Image_linkedin" src="./img/linkedin.png"/>
+                </a></article>
+                </section>
+              
+                <section>
+                    <a href="./sitographie.html" target="_blank" title="Lien vers la page sitographie"> Source / Sitographie </a>
+                </section>
+              
+                <section>
+                    <a href="./forum.html" target="_blank" title="Nous contacter"> Nous contacter </a>
+                  </section>
+              
+                <section>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2021.5034977430867!2d2.2200542908998955!3d48.92366623648503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664395d89dded%3A0xdff8ed876e4e0cf6!2sAtos!5e0!3m2!1sen!2sfr!4v1705916823129!5m2!1sen!2sfr" 
+                  width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>

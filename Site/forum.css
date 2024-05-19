@@ -1,0 +1,63 @@
+body{
+    width: 90%;
+    margin-left: 5%;
+margin-right: 5%;
+}
+
+
+
+
+input:not(:placeholder-shown):invalid{
+    background-color: pink;
+    }
+h2{
+    text-align: center;
+}
+
+form{
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sexe, .nom ,.mail section{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.conteneur{
+    /*Pour positionner les elments dans la div(autre div corespondant au partie) */
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+.InfoSupSurApli{
+    /*Pour positionner les elements de fieldset qui sont caher de mamiere a occupé tout l"espace*/
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.InfoSupSurApliConteneur{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+ 
+textarea{
+    resize: vertical;
+  }
+  
+
+.mail{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+}
+p{
+    text-align: center;
+}

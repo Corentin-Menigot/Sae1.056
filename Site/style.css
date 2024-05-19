@@ -1,0 +1,348 @@
+body {
+  width: 100%;
+  margin: 0;
+    padding: none;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  main{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  p{
+    font-size: large;
+}
+
+  nav {
+    /*Pour la nav qui s'affiche de base avec le lego*/
+    background-color: #11073d;
+    color: #fff;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  nav img {
+    /*Pour la taille du logo Atos*/
+    max-width: 150px;
+    height: auto;
+  }
+  /*Pour mettre une marge pour décaler le diapo d'image pour faire de l'espace pour le menu hamburger*.Quand l'icone hamburger est cliquer la
+    fonction addEventListener va le voir est va rendre visible tous ce qui a .show*/
+    /*Voir js*/
+  nav.show {
+    margin-bottom: 70px;
+  
+    
+  }
+  /*Pour cacher la deuxieme bar de nav (nav ul:nth-child(2))*/
+    nav ul:nth-child(2) {
+      margin-top: 10px;
+      display: none;
+      /*Positionnement pour la deuximee bar de nav*/
+      position: absolute;
+      top: 120px;
+      left: 84px;
+      width: 90%;
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius: 80px;
+      border-top: solid #0b0524 2px;
+    }
+    /*Le nav ul est par défaut display:none, quand l'icone hamburger est cliquer la
+    fonction addEventListener va le voir est va rendre visible tous ce qui a .show*/
+        /*Voir js*/
+    nav ul.show{
+        display: flex;
+    }
+    /*Pour les deux nav*/
+  nav ul {
+    background-color: #11073d;
+    font-size: x-large;
+    width: 700px;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+        
+  }
+  /*Pour le texte des nav*/
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+  }
+/*Pour pouvoir sousligner les element a quand on passe dessus*/
+  nav a:hover {
+    width: 100%;
+    text-decoration: underline white 2px;
+  }
+  .active{
+    text-decoration: underline white 2px;
+  }
+
+/*Pour l'icone du menu hamburger*/
+  .icone-nemu {
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .icone-nemu {
+    display: block;
+  }
+
+/*L'encadrer pour le interrupteur pour activer le mode sonbre*/
+  .interrupteur {
+   
+    display: inline-block;
+    position: relative;
+    width: 43px;
+    height: 22px;
+    background-color: #606683;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+    border: red 2px solid;
+  }
+/*Interrupteur qui quand appuyé va changer la couleur des elements et la couleur de fond des element selectionés 
+dans le js. La fonction qui se charge de ça est modeSombre*/
+/*Voir js*/
+  .interrupteur .interrupteur-poignee {
+    color: white; 
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    top: 0px;
+    left: 1px;
+    transition: transform 0.3s ease-in-out;
+  }
+/* C'est cacher la boite chechbox qui de base est visible et qui nous sert pas car on a interrupteur qui le montre*/
+  .interrupteur input[type="checkbox"] {
+    visibility:hidden;
+  }
+/*C'est pour bouger l'interupteur  de 20 px si le input est activé si il revient a sa position de base*/
+  .interrupteur input[type="checkbox"]:checked + .interrupteur-poignee {
+    transform: translateX(20px);
+  }
+/*C'est pour changer la couleur de l'input*/
+  .interrupteur input[type="checkbox"]:checked + .interrupteur-poignee + .interrupteur {
+    background-color: #555;
+  }
+  /*C'est dans la fonction modeSombre pour afficher une bordure noir autour de l'interupteur 
+    de base elle n'est pas visible*/
+    .interrupteur.show {
+      border: 2px solid black;
+    }
+
+    nav li {
+      margin-right: 0;
+      text-align: left;
+      padding: 10px;
+    }
+ 
+   body>div>p{
+      text-align: center;
+      font-size: xx-large;
+      text-decoration: underline;
+    }
+
+/*------------------------------------------------------FIN NAV------------------------------------*/
+* {box-sizing: border-box}
+/*Caché de base */
+img {vertical-align: middle;}
+
+
+.boiteDiapo {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*Style pour les button avant et après*/
+.avt, .apr {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positionnement du button apres vers la droite */
+.apr {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Style pour les button avt et apres  */
+.avt:hover, .apr:hover {
+  background-color: grey ,;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*------------------------------------------------------FIN Diapo------------------------------------*/
+
+
+.Nosprojet{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+
+  }
+  .projetBis{
+    background-color: #00a39b;
+  }
+  .Nosprojet img{
+      width: 400px;
+      height: 300px;
+      border-radius: 50px;
+      border: black 2px solid;
+      box-shadow: 2px 2px #000;
+  }
+  .Nosprojet div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px;
+      max-width: 100%;
+      
+     
+  }
+  .Nosprojet a{
+    border: black solid 2px;
+    word-wrap: break-word;
+    max-width: 400px;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+  }
+  .Nosprojet a:hover{
+    color: blue;
+  }
+
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    max-width: 80%;
+  }
+/*------------------------------------------------------FIN Nos projet------------------------------------*/
+
+    .vl {
+  border-left: 6px solid green;
+  height: 70px;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+/*------------------------------------------------------FIN Menu deroulant------------------------------------*/
+
+.groseeTete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.groseeTete  img{
+    margin: 5px;
+    width: 175px;
+    padding: 15px;
+    border: black solid 2px;
+    border-radius: 50%;
+}
+.groseeTete  div{
+    max-width: 300px        ;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border: black solid 2px;
+}
+.buttonGrosseTete {
+    margin: 5px;
+   text-align: center;
+}
+
+div.affiche {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.menuContent1 {
+      display: none;
+    }
+
+
+.affiche img{
+    width: 100%;
+}
+.imgtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    margin: 5px;
+}
+ /*----------------------------------Fin Grosse Tetes----------------------------------------------------------------------------*/
+
+ .formulaire{
+    border: black solid 2px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+ }
+ .formulaire section:first-child{
+    border: dotted black 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+ }
+ .formulaire img{
+    border: dotted black 2px;
+
+    width: 40%;
+ }
+

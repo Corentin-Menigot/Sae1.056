@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>L'organisation d'Atos</title>
+    <link rel="stylesheet" href="StylePageOrganisation.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./img/LogoAtos.png" alt="Logo">
+          <ul>
+              <li><a href="./projets.html">Projets</a></li>
+              <li><a href="./PageOrganisation.html" class = "active">Organisation</a></li>
+              <li><a href="./ecologie.html">Ecologie</a></li>
+            </ul>
+            <ul>
+              <li><a href="./index.html">Accueil</a></li>
+              <li><a href="./produits.html">Produits</a></li>
+              <li><a href="./PageClients.html">Clients</a></li>
+              <li><a href="./forum.html"target="_blank">Nous rejoindre</a></li>
+            </ul> 
+          <div class="icone-nemu">&#9776;</div> 
+  <div class="interrupteur">
+  <!--Pour le mode sombre-->
+    <input type="checkbox" id="modeinterrupteur" onchange="modeSombre()">
+    <!--Le for="" indique que le label est pour l'input car il a le meme idenifiant -->
+    <!--Cela nous permet cliquer sur le label et avec le for qui l'associe au input nous permet 
+       d'acrtiver la fonction toggleDarkMode et change le mode sombre -->
+    <label class="interrupteur-poignee" for="modeinterrupteur" onclick="myFunction" ></label>
+  </div>
+        </nav>
+        
+  </header>
+    <h1>L'organisation d'Atos</h1>
+    <main>
+        <section>
+            <p>Atos est une grande entreprise de plus de 110 000 salariés
+              dispersés dans 73 pays à travers le monde. L'entreprise
+              s'est fortement renforcée en acquérant d'autres grosses
+              entreprises tel que la branche informatique de Xerox ou
+              encore Anthelio. Depuis 2012, Atos a changé de statut et
+              répond désormais aux lois européennes plutôt qu'aux lois
+              françaises. Atos est dirigée par un conseil d'administration
+              composé de 7 à 18 membres, dont un président élu par ce
+              conseil. Au delà de ce conseil se trouve un directeur général,
+              lui même encore décidé par le conseil d'administration,
+              qui possède de forts pouvoirs sur l'entreprise. Le conseil
+              d'administration décide des objectifs et des moyens de les
+              atteindre pour l'entreprise, tout en limitant les pouvoirs
+              du directeur général.</p>
+            <img src="./img/repartitionGeographique.png" alt="GraphiqueRepartitionGeogrpahique">
+        </section>
+        <hr>
+        <img src="./img/Organigramme.png" alt="OrganigrammeAtos">
+    </main>
+    <footer>
+      <section>
+          <article><a href="https://www.youtube.com/user/Atos" target="_blank" title="Lien vers la chaine youtube d'Atos">
+            <img alt="Image_youtube" src="./img/youtube.png"/>
+          </a></article>
+          <article><a href="https://www.instagram.com/atosinside/" target="_blank" title="Lien vers le compte instagram d'Atos">
+            <img alt="Image_instagram" src="./img/instagram.png"/>
+          </a></article>
+          <article><a href="https://www.facebook.com/Atos" target="_blank" title="Lien vers le compte facebook d'Atos">
+            <img alt="Image_facebook" src="./img/facebook.png"/>
+          </a></article>
+          <article><a href="https://twitter.com/atos" target="_blank" title="Lien vers le compte twitter d'Atos">
+            <img alt="Image_twitter" src="./img/logo-twitter.png"/>
+          </a></article>
+          <article><a href="https://www.linkedin.com/company/atos/" target="_blank" title="Lien vers le compte linkedin d'Atos">
+            <img alt="Image_linkedin" src="./img/linkedin.png"/>
+          </a></article>
+          </section>
+        
+          <section>
+            <a href="./sitographie.html" target="_blank" title="Lien vers la page sitographie"> Source / Sitographie </a>
+          </section>
+        
+          <section>
+            <a href="./forum.html" target="_blank" title="Nous contacter"> Nous contacter </a>
+          </section>
+        
+          <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2021.5034977430867!2d2.2200542908998955!3d48.92366623648503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664395d89dded%3A0xdff8ed876e4e0cf6!2sAtos!5e0!3m2!1sen!2sfr!4v1705916823129!5m2!1sen!2sfr" 
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+</html>

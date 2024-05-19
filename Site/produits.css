@@ -1,0 +1,103 @@
+
+article{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.left{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+
+.left section,.right section{
+  display: flex;
+  flex-direction: column;
+  /*Pour changer la position des boutton*/
+align-items: flex-start;
+ 
+} 
+button{
+  width: fit-content;
+}
+
+.right{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+}
+
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    max-width: 100%;
+  }
+/*-----------------------------------------Pour les dropdown menu-----------------------------------------------*/
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;
+
+}
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+
+}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .produit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #04AA6D;
+    border-radius: 100px;
+  }
+  /*----------------------------------------- FINPour les dropdown menu-----------------------------------------------*/
+
+
+main img{
+    height: 200px;
+    width: 300px;
+    box-shadow: 2px 2px #000;
+    border: solid 2px #000;
+    border-radius: 12px;
+}

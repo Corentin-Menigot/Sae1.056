@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    align-self: center;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main section {
+    border: solid black;
+    width: 650px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+main section img {
+    max-width: 300px;
+    max-height: 180px;
+    border: none;
+    box-shadow: none;
+    border-radius: 12px;
+}
+
+main section img,main section aside {
+    margin: 2em;
+}
+
+main section {
+    background-color: grey;
+}
+
+
+aside a {
+    font-size: large;
+    color: black;
+    
+}
+
+aside a:hover{
+    color: blue;
+}
